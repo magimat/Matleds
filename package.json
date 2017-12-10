@@ -1,0 +1,19 @@
+{
+  "name": "matleds",
+  "version": "1.0.0",
+  "description": "Mat yeelight led strip comtroller",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon matleds.js"
+  },
+  "author": "Mathieu Girard",
+  "license": "ISC",
+
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "yeelight2": "^1.3.5"
+  }
+}
