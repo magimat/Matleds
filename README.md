@@ -1,8 +1,47 @@
 # Matleds
 
 
+## build docker image
 
-### Installation en service pour démarrage automatique au reboot
+```		
+cd ~
+git clone git@github.com:magimat/Matleds.git
+cd Matleds
+docker build -t magimat/matleds .
+docker push magimat/matleds
+```
+
+## run docker 
+
+```
+docker run -p 5000:80 --name matleds --device=/dev/inledsPLM -d --restart unless-stopped magimat/matleds
+```
+
+
+
+
+Librairie Inleds:  https://github.com/automategreen/home-controller#lighting-functions
+
+<br/>
+<br/>
+<br/>
+
+
+***
+***
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+
+
+## (DEPRECATED, use docker instead)
+
+### Installation en service pour démarrage automatique au reboot . 
 
 
 #### Install forever
@@ -12,7 +51,7 @@
 
 #### Créer fichier service
 
-sudo nano /etc/init.d/matleds
+sudo nano /etc/init.d/matleds 
 
 ```
 #!/bin/sh

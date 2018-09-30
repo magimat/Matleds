@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-app.listen(5000);
+app.listen(80);
 
 const Yeelight = require('yeelight2');
 const leds =  new Yeelight('192.168.11.100', 55443)
