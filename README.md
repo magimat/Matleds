@@ -14,13 +14,12 @@ docker push magimat/matleds
 ## run docker 
 
 ```
-docker run -p 5000:80 --name matleds --device=/dev/inledsPLM -d --restart unless-stopped magimat/matleds
+docker run -p 5000:80 --name matleds -d --restart unless-stopped magimat/matleds
 ```
 
 
 
 
-Librairie Inleds:  https://github.com/automategreen/home-controller#lighting-functions
 
 <br/>
 <br/>
